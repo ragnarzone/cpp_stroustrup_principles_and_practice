@@ -4,7 +4,17 @@ int main()
 {
     int num1 = 0;
     int num2 = 0;
-    cout << "Please enter pair of numbers: ";
-    cin >> num1 >> num2;
-    cout << "The numbers are: " << num1 << " " << num2;
+    bool test = true;
+
+    while(test){
+        cout << "Please enter two ints and press enter: \n";
+        cin >> num1 >> num2;
+        
+        if (cin.fail()){
+            test = false;
+        }
+        else {
+            cout << "The numbers are: " << num1 << ' ' << num2 << '\n';
+        }
+    }
 }
