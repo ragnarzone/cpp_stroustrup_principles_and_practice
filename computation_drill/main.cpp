@@ -17,6 +17,9 @@ int main()
             if (num1 > num2){
                 cout << "The smaller value is: " << num2 << '\n';
                 cout << "The larger value is: " << num1 << '\n';
+                if ((num1 - num2) < 0.001){
+                    cout << "The numbers are almost equal\n";
+                }
             }
             else if(num1 == num2){
                 cout << "The numbers are equal\n";
@@ -24,6 +27,9 @@ int main()
             else{
                 cout << "The smaller value is: " << num1 << '\n';
                 cout << "The larger value is: " << num2 << '\n';
+                if ((num2 - num1) < 0.001){
+                    cout << "The numbers are almost equal\n";
+                }
             }
         }
     }
