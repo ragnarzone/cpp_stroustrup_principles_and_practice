@@ -14,8 +14,10 @@ int main()
     cout << "arr\t" << arr << endl;
     cout << "pArr\t" << pArr << endl;
 
+    cout << "=====================" << endl;
+
     for(int i = 0; i < SIZE; i++){
-        cout << pArr[i] <<endl;
+        cout << *(pArr+i) <<endl;
     }
 
     return 0;
