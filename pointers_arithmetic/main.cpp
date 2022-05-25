@@ -8,5 +8,12 @@ int main()
         cout << arr[i] << endl;
     }
 
+    cout << "=====================" << endl;
+    int *pArr = arr;
+
+    for(int i = 0; i < SIZE; i++){
+        cout << pArr[i] <<endl;
+    }
+
     return 0;
 }
