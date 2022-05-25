@@ -20,5 +20,9 @@ int main()
         cout << *(pArr+i) <<endl;
     }
 
+    cout << "=====================" << endl;
+
+    cout << *(arr+2) << endl;
+
     return 0;
 }
