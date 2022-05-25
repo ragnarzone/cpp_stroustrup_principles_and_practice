@@ -24,5 +24,11 @@ int main()
 
     cout << *(arr+2) << endl;
 
+    cout << "=====================" << endl;
+
+    for(int i = 0; i < SIZE; i++){      // outputs addresses of elements in arr
+        cout << (pArr+i) <<endl;
+    }
+
     return 0;
 }
