@@ -5,6 +5,7 @@ int main()
     string path = "myFile.txt";
 
     ifstream fin;
+    fin.exceptions(ifstream::badbit | ifstream::failbit);
 
     try
     {
